@@ -47,6 +47,32 @@ $.JSON("/events/" + id, function (data) {
 });
 ```
 
+#### Sample of Above Data
+```json
+[
+  {
+    "_id": "586d5c9d53bc215c740bc592",
+    "id": 2016020016,
+    "est": "20161014 22:30:00",
+    "a": "PHI",
+    "h": "LAK"
+  },
+  {
+    "_id": "586d5c9d53bc215c740bc59e",
+    "id": 2016020028,
+    "est": "20161015 21:00:00",
+    "a": "PHI",
+    "h": "ARI"
+  },
+  {
+    "_id": "586d5c9d53bc215c740bc5af",
+    "id": 2016020045,
+    "est": "20161018 20:30:00",
+    "a": "PHI",
+    "h": "CHI"
+  }...
+]
+```
 Now, let's get the shift data for the same game. It's important to note that a prefix of either TH (home) or TV (visitor) is needed, along with the id, to get that data.
 
 ```javascript
