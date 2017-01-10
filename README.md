@@ -71,7 +71,6 @@ $.JSON("/events/" + id, function (data) {
     "a": "PHI",
     "h": "CHI"
   },
-  {"_comment": "there is more data returned but hidden..."}
 ]
 ```
 Now, let's get the shift data for the same game. It's important to note that a prefix of either TH (home) or TV (visitor) is needed, along with the id, to get that data.
