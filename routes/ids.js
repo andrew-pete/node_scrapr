@@ -11,8 +11,12 @@ router.get('/', function(req, res, next) {
   var db = req.db;
   var collection = db.get("id_list");
 
+  var team = req.query.team;
+
+  var query = (team) ? { $or: [ {h: team}, {a: team} ] } : {};
+
   console.log("checking db...");
-  collection.find({},{}, function (e, docs) {
+  collection.find(query, {}, function (e, docs) {
     if (docs.length === 0) {
       console.log("not found in db. fetching...");
       request({

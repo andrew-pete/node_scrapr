@@ -14,7 +14,7 @@ var users = require('./routes/users');
 
 var ids = require('./routes/ids');
 var shifts = require('./routes/shifts');
-var shots = require('./routes/shots');
+var events = require('./routes/events');
 
 
 var app = express();
@@ -44,7 +44,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/ids', ids);
 app.use('/shifts', shifts);
-app.use('/shots', shots);
+app.use('/events', events);
 
 
 
